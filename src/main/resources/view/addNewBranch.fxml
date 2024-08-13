@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #040D12; -fx-border-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddNewBranchController">
+   <children>
+      <ImageView layoutX="21.0" layoutY="19.0">
+         <image>
+            <Image url="@../image/addBranchIcon.png" />
+         </image>
+      </ImageView>
+      <Line endX="400.0" layoutX="173.0" layoutY="45.0" startX="-100.0" stroke="#00b906" />
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="50.0" layoutY="11.0">
+         <image>
+            <Image url="@../image/addBranch.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="545.0" layoutY="8.0">
+         <image>
+            <Image url="@../image/closeIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="544.0" layoutY="8.0" prefHeight="30.0" prefWidth="30.0" text="." textFill="#6f6868" />
+      <Label layoutX="41.0" layoutY="136.0" text="Branch Id" textFill="WHITE" />
+      <JFXTextField fx:id="txtBranchId" layoutX="42.0" layoutY="165.0" prefHeight="25.0" prefWidth="300.0" promptText="enter branch Id" unFocusColor="#00722a" />
+      <Label layoutX="41.0" layoutY="216.0" text="Branch Name" textFill="WHITE" />
+      <JFXTextField fx:id="txtBranchName" layoutX="42.0" layoutY="245.0" prefHeight="25.0" prefWidth="300.0" promptText="enter branch name" unFocusColor="#00722a" />
+      <JFXButton buttonType="RAISED" layoutX="264.0" layoutY="300.0" onAction="#addBranchOnAction" style="-fx-background-color: #019104;" text="Add Branch" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="180.0" fitWidth="169.0" layoutX="382.0" layoutY="120.0">
+         <image>
+            <Image url="@../image/branchIMG.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="162.0" layoutY="300.0" onAction="#viewBranchOnAction" style="-fx-background-color: #019104;" text="View Branch" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

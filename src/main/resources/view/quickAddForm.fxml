@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #040D12; -fx-border-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.QuickAddFormController">
+   <children>
+      <Line endX="440.0" layoutX="141.0" layoutY="40.0" startX="-82.0" stroke="#008022" />
+      <ImageView fitHeight="48.0" fitWidth="51.0" layoutX="8.0" layoutY="15.0">
+         <image>
+            <Image url="@../image/QuickAddBook.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="552.0" layoutY="5.0">
+         <image>
+            <Image url="@../image/closeIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="552.0" layoutY="5.0" onAction="#closeWindowOnAction" prefHeight="30.0" prefWidth="30.0" text="." textFill="#807878">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="360.0" layoutY="105.0" text="Quick" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="75.0" />
+         </font>
+      </Label>
+      <Label layoutX="460.0" layoutY="195.0" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="53.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="298.0" text="Start Date" textFill="WHITE" />
+      <Label layoutX="279.0" layoutY="299.0" text="Return Date" textFill="WHITE" />
+      <Label layoutX="59.0" layoutY="153.0" text="Book Title" textFill="WHITE" />
+      <Label layoutX="59.0" layoutY="80.0" text="Your Name" textFill="WHITE" />
+      <JFXTextField fx:id="txtName" layoutX="59.0" layoutY="108.0" prefHeight="25.0" prefWidth="267.0" promptText="enter user" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#007c36">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXDatePicker fx:id="txtStartDate" defaultColor="#004d2d" layoutX="59.0" layoutY="321.0" promptText="select start date" stylesheets="@../styleSheet/styleSheet.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXDatePicker>
+      <JFXDatePicker fx:id="txtReturnDate" defaultColor="#004d2d" layoutX="279.0" layoutY="321.0" promptText="select return date" stylesheets="@../styleSheet/styleSheet.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXDatePicker>
+      <JFXTextField fx:id="txtTitle" layoutX="59.0" layoutY="177.0" prefHeight="25.0" prefWidth="267.0" promptText="enter book" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#008040">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton layoutX="480.0" layoutY="320.0" onAction="#quickAddOnAction" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #019104;" text="Quick Add" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTimePicker fx:id="txtTime" layoutX="59.0" layoutY="246.0" promptText="select time">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTimePicker>
+      <Label layoutX="59.0" layoutY="221.0" text="select Time" textFill="WHITE" />
+   </children>
+</AnchorPane>

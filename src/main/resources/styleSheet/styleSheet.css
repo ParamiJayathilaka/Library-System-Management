@@ -1,0 +1,7 @@
+.font{
+    -fx-text-fill: #5C8374;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}

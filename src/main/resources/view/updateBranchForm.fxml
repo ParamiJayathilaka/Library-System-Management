@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="436.0" prefWidth="710.0" style="-fx-background-color: #040D12; -fx-border-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UpdateBranchFormController">
+   <children>
+      <ImageView layoutX="21.0" layoutY="20.0">
+         <image>
+            <Image url="@../image/addBranchIcon.png" />
+         </image>
+      </ImageView>
+      <Line endX="514.0" layoutX="173.0" layoutY="46.0" startX="-100.0" stroke="#00b906" />
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="48.0" layoutY="20.0">
+         <image>
+            <Image url="@../image/updateBranch.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="248.0" text="Branch Number" textFill="WHITE" />
+      <Label layoutX="75.0" layoutY="327.0" text="Branch Name" textFill="WHITE" />
+      <JFXTextField fx:id="txtBranchNumber" layoutX="75.0" layoutY="280.0" prefHeight="25.0" prefWidth="298.0" promptText="enter branch number" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#005729">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBranchName" layoutX="75.0" layoutY="359.0" prefHeight="25.0" prefWidth="298.0" promptText="enter branch name" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#005729">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="545.0" layoutY="360.0" onAction="#branchUpdateOnAction" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #019104;" text="Update" textFill="WHITE" />
+      <Label layoutX="453.0" layoutY="152.0" prefHeight="99.0" prefWidth="188.0" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="455.0" layoutY="253.0" text="Branch" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="searchBranch" layoutX="74.0" layoutY="85.0" onAction="#searchBranchOnAction" prefHeight="31.0" prefWidth="557.0" promptText="search book" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#006523">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <Label layoutX="75.0" layoutY="171.0" text="Branch Id" textFill="WHITE" />
+      <JFXTextField fx:id="txtBranchId" layoutX="77.0" layoutY="200.0" prefHeight="25.0" prefWidth="298.0" promptText="branch Id" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#005b18" />
+      <JFXButton buttonType="RAISED" layoutX="442.0" layoutY="360.0" onAction="#viewBranchOnAction" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #019104;" text="View Branch" textFill="WHITE" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="658.0" layoutY="9.0">
+         <image>
+            <Image url="@../image/closeIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="658.0" layoutY="9.0" onAction="#closeWindowOnAction" prefHeight="30.0" prefWidth="30.0" text="." textFill="#807878" />
+   </children>
+</AnchorPane>

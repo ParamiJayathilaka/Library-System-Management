@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1358.0" style="-fx-background-color: #040D12;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminFormController">
+   <children>
+      <Label layoutX="23.0" layoutY="15.0" prefHeight="39.0" prefWidth="212.0" text="Label" textFill="#e1cece">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="92.0" layoutY="52.0" prefHeight="59.0" prefWidth="1198.0" promptText="search books" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#639067">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="1239.0" layoutY="23.0" onAction="#logoutOnAction" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #019104;" text="logout" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="1117.0" layoutY="22.0">
+         <image>
+            <Image url="@../image/settingIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1155.0" layoutY="26.0" prefHeight="25.0" prefWidth="51.0" text="Setting" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1116.0" layoutY="22.0" onAction="#settingOnAction" prefHeight="31.0" prefWidth="95.0" text=".">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="1001.0" layoutY="21.0">
+         <image>
+            <Image url="@../image/historyIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1037.0" layoutY="23.0" text="History" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1003.0" layoutY="23.0" onAction="#historyOnAction" prefHeight="25.0" prefWidth="90.0" text="." />
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="888.0" layoutY="21.0">
+         <image>
+            <Image url="@../image/addBranchIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="921.0" layoutY="22.0" text="Branch" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="888.0" layoutY="23.0" onAction="#branchOnAction" prefHeight="27.0" prefWidth="86.0" text="." />
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="788.0" layoutY="23.0">
+         <image>
+            <Image url="@../image/book.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="821.0" layoutY="24.0" text="Book" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="789.0" layoutY="24.0" onAction="#bookOnAction" prefHeight="25.0" prefWidth="73.0" text="." />
+      <TableView fx:id="bookTable" layoutX="123.0" layoutY="192.0" prefHeight="452.0" prefWidth="1118.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="colName" prefWidth="265.0" text="Book Name" />
+            <TableColumn fx:id="colAuthor" prefWidth="249.0" text="Author" />
+            <TableColumn fx:id="colGenre" prefWidth="279.0" text="Genre" />
+            <TableColumn fx:id="colStatus" prefWidth="249.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

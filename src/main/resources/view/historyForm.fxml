@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane prefHeight="409.0" prefWidth="719.0" style="-fx-background-color: #040D12;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.HistoryFormController">
+   <children>
+      <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="14.0" layoutY="15.0">
+         <image>
+            <Image url="@../image/historyIcon.png" />
+         </image>
+      </ImageView>
+      <Line endX="550.0" layoutX="151.0" layoutY="42.0" startX="-82.0" stroke="#008022" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="672.0" layoutY="6.0">
+         <image>
+            <Image url="@../image/closeIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnClose" layoutX="672.0" layoutY="6.0" onAction="#closeWindowOnAction" prefHeight="30.0" prefWidth="30.0" text="." textFill="#756e6e" />
+      <TableView fx:id="historyTable" layoutX="31.0" layoutY="105.0" prefHeight="273.0" prefWidth="657.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="43.0" text="id" />
+          <TableColumn fx:id="colUserName" prefWidth="104.0" text="Your Name" />
+            <TableColumn fx:id="colBookName" prefWidth="117.0" text="Book Name" />
+            <TableColumn fx:id="colTime" prefWidth="95.0" text="Time" />
+            <TableColumn fx:id="colStartDate" prefWidth="103.0" text="Start Date" />
+            <TableColumn fx:id="colReturnDate" prefWidth="96.0" text="Return Date" />
+            <TableColumn fx:id="colReturnBook" prefWidth="98.0" text="Return Book" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

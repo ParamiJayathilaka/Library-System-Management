@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerAnchorpane" prefHeight="545.0" prefWidth="779.0" style="-fx-background-color: #040D12;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegisterFormController">
+   <children>
+      <Label layoutX="478.0" layoutY="212.0" text="Register For" textFill="WHITE">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="610.0" layoutY="281.0" text="Users" textFill="WHITE">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="110.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="356.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="190.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUsername" layoutX="57.0" layoutY="140.0" prefHeight="25.0" prefWidth="306.0" promptText="enter username" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" layoutX="57.0" layoutY="218.0" prefHeight="25.0" prefWidth="306.0" promptText="enter email" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPassword" layoutX="57.0" layoutY="384.0" prefHeight="25.0" prefWidth="306.0" promptText="enter password" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="271.0" layoutY="450.0" onAction="#registerOnAction" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #019104;" text="Register" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="18.0" layoutY="15.0" text="Welcom to Book Worm Library" textFill="#cdbebe">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="713.0" layoutY="77.0" onMouseClicked="#loginOnAction" text="Login" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line endX="-61.0" layoutX="812.0" layoutY="100.0" startX="-100.0" stroke="LIME" />
+      <Line endX="763.0" endY="45.0" layoutY="9.0" startX="15.0" startY="45.0" stroke="#46a451" strokeWidth="2.0" />
+      <Label layoutX="297.0" layoutY="506.0" text="All Rights Book Worm Library 2024" textFill="WHITE" />
+      <Label fx:id="lblPassword" layoutX="57.0" layoutY="412.0" prefHeight="26.0" prefWidth="306.0" textFill="RED" />
+      <Label fx:id="lblUsername" layoutX="57.0" layoutY="168.0" prefHeight="17.0" prefWidth="306.0" textFill="RED" />
+      <Label fx:id="lblEmail" layoutX="57.0" layoutY="245.0" prefHeight="17.0" prefWidth="306.0" textFill="RED" />
+      <JFXTextField fx:id="txtBranchName" layoutX="57.0" layoutY="302.0" prefHeight="25.0" prefWidth="306.0" promptText="enter branch" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <Label layoutX="57.0" layoutY="269.0" text="Branch Name" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBranch" layoutX="57.0" layoutY="329.0" prefHeight="21.0" prefWidth="306.0" textFill="RED" />
+   </children>
+</AnchorPane>

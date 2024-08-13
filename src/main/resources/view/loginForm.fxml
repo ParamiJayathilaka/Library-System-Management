@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="779.0" style="-fx-background-color: #040D12;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <AnchorPane fx:id="loginAnchorpane" prefHeight="545.0" prefWidth="779.0" style="-fx-background-color: black;">
+         <children>
+            <Line endX="763.0" endY="45.0" layoutY="9.0" startX="15.0" startY="45.0" stroke="#93b1a6" strokeWidth="2.0" />
+            <JFXButton buttonType="RAISED" layoutX="644.0" layoutY="63.0" onAction="#registerOnAction" prefHeight="29.0" prefWidth="120.0" style="-fx-background-color: #019104;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="145.0" fitWidth="145.0" layoutX="317.0" layoutY="122.0">
+               <image>
+                  <Image url="@../image/login.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="268.0" layoutY="295.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="267.0" layoutY="391.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUsername" layoutX="267.0" layoutY="334.0" prefHeight="25.0" prefWidth="243.0" promptText="enter username" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#006e0c" />
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="342.0" layoutY="485.0" onAction="#loginOnAction" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #019104;" text="Login" textFill="WHITE" />
+            <Label layoutX="100.0" layoutY="16.0" text="BOOK WORM LIBRARY" textFill="#cdbebe">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="67.0" layoutX="15.0" layoutY="-2.0">
+               <image>
+                  <Image url="@../image/log-in.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="734.0" layoutY="11.0">
+               <image>
+                  <Image url="@../image/closeIcon.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="734.0" layoutY="11.0" onAction="#closeButtonOnAction" prefHeight="30.0" prefWidth="31.0" text="." textFill="#6b5757">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXPasswordField fx:id="txtPassword" layoutX="267.0" layoutY="430.0" prefHeight="25.0" prefWidth="243.0" promptText="enter password" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#00721e">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXPasswordField>
+            <Label fx:id="lblUsername" layoutX="267.0" layoutY="362.0" prefHeight="17.0" prefWidth="243.0" textFill="RED" />
+            <Label fx:id="lblPassword" layoutX="267.0" layoutY="458.0" prefHeight="17.0" prefWidth="243.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

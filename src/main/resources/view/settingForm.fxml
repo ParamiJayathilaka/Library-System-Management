@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="567.0" prefWidth="391.0" style="-fx-background-color: #040D12; -fx-border-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SettingFormController">
+   <children>
+      <JFXTextField fx:id="txtCurrentUsername" layoutX="55.0" layoutY="109.0" prefHeight="36.0" prefWidth="285.0" promptText="current username" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="25.0" layoutY="26.0">
+         <image>
+            <Image url="@../image/settingIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="71.0" layoutY="31.0" text="Setting" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Line endX="168.0" layoutX="187.0" layoutY="44.0" startX="-55.0" stroke="#46a451" />
+      <Label layoutX="40.0" layoutY="71.0" text="Change Username" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNewUsername" layoutX="55.0" layoutY="169.0" prefHeight="36.0" prefWidth="285.0" promptText="new username" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="txtConfirmUsername" layoutX="55.0" layoutY="229.0" prefHeight="36.0" prefWidth="285.0" promptText="confirm username" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="txtConfirmPassword" layoutX="55.0" layoutY="459.0" prefHeight="36.0" prefWidth="285.0" promptText="confirm password" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="txtNewPassword" layoutX="55.0" layoutY="399.0" prefHeight="36.0" prefWidth="285.0" promptText="new password" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="txtCurrentPassword" layoutX="55.0" layoutY="339.0" prefHeight="36.0" prefWidth="285.0" promptText="current password" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#46a451">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <Label layoutX="40.0" layoutY="300.0" text="Change Password" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="252.0" layoutY="521.0" onAction="#saveChangesOnAction" style="-fx-background-color: #019104;" text="Save Changes" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblCurrentUsername" layoutX="57.0" layoutY="152.0" prefHeight="17.0" prefWidth="285.0" textFill="RED" />
+      <Label fx:id="lblNewUsername" layoutX="57.0" layoutY="212.0" prefHeight="17.0" prefWidth="285.0" textFill="RED" />
+      <Label fx:id="lblConfirmUsername" layoutX="57.0" layoutY="272.0" prefHeight="17.0" prefWidth="285.0" textFill="RED" />
+      <Label fx:id="lblCurrentPassword" layoutX="57.0" layoutY="382.0" prefHeight="17.0" prefWidth="285.0" textFill="RED" />
+      <Label fx:id="lblNewPassword" layoutX="57.0" layoutY="442.0" prefHeight="17.0" prefWidth="285.0" textFill="RED" />
+      <Label fx:id="lblConfirmPassword" layoutX="57.0" layoutY="502.0" prefHeight="17.0" prefWidth="285.0" textFill="RED" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="326.0" layoutY="8.0">
+         <image>
+            <Image url="@../image/closeIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="326.0" layoutY="8.0" onAction="#closeWindowOnAction" prefHeight="30.0" prefWidth="30.0" text="." textFill="#685858" />
+   </children>
+</AnchorPane>

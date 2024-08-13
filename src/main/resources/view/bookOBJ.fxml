@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="148.0" prefWidth="977.0" style="-fx-background-radius: 20; -fx-background-color: #005a39;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BookOBJController">
+   <children>
+      <Label layoutX="8.0" layoutY="131.0" prefHeight="17.0" prefWidth="1043.0" textFill="WHITE" />
+      <ImageView fx:id="imageView" fitHeight="136.0" fitWidth="117.0" layoutX="17.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="151.0" layoutY="33.0" text="Book Title" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="33.0" text="Author" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="566.0" layoutY="33.0" text="Genre" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="775.0" layoutY="33.0" text="Status" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookTitle" layoutX="151.0" layoutY="73.0" prefHeight="26.0" prefWidth="179.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAuthor" layoutX="360.0" layoutY="73.0" prefHeight="26.0" prefWidth="179.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGenre" layoutX="568.0" layoutY="73.0" prefHeight="26.0" prefWidth="179.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus" layoutX="778.0" layoutY="73.0" prefHeight="26.0" prefWidth="146.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="949.0" layoutY="-1.0" onMouseEntered="#quickAddLabelMouseEnterOnAction" onMouseExited="#quickAddLabelMouseExitOnAction" prefHeight="149.0" prefWidth="145.0" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <graphic>
+            <JFXButton fx:id="btnQuickAdd" buttonType="RAISED" onAction="#btnQuickAddOnAction" prefHeight="48.0" prefWidth="134.0" style="-fx-background-color: #0045b5; -fx-background-radius: 30;" text="Quick Add" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="555.0" prefWidth="685.0" style="-fx-background-color: #040D12; -fx-border-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BookUpdateFormController">
+   <children>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@../image/updateBook.png" />
+         </image>
+      </ImageView>
+      <Line endX="493.0" layoutX="167.0" layoutY="41.0" startX="-100.0" stroke="#008022" />
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="629.0" layoutY="5.0">
+         <image>
+            <Image url="@../image/closeIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnClose" layoutX="629.0" layoutY="6.0" onAction="#windowCloseOnAction" prefHeight="31.0" prefWidth="32.0" text="." textFill="#616161">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="65.0" layoutY="198.0" text="Book Name" textFill="WHITE" />
+      <Label layoutX="65.0" layoutY="277.0" text="Author" textFill="WHITE" />
+      <Label layoutX="65.0" layoutY="357.0" text="Genre" textFill="WHITE" />
+      <Label layoutX="65.0" layoutY="438.0" text="Availability Status" textFill="WHITE" />
+      <JFXTextField fx:id="txtBookName" layoutX="65.0" layoutY="230.0" prefHeight="25.0" prefWidth="298.0" promptText="enter book name" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#005729">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAuthor" layoutX="65.0" layoutY="309.0" prefHeight="25.0" prefWidth="298.0" promptText="enter author name" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#005729">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtGenre" layoutX="65.0" layoutY="387.0" prefHeight="25.0" prefWidth="298.0" promptText="enter book genre" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#005729">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAvailabilityStatus" layoutX="65.0" layoutY="470.0" prefHeight="25.0" prefWidth="298.0" promptText="availability status" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#005729">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="528.0" layoutY="473.0" onAction="#bookUpdateOnAction" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #019104;" text="Update" textFill="WHITE" />
+      <Label layoutX="433.0" layoutY="222.0" prefHeight="99.0" prefWidth="188.0" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" layoutY="323.0" text="Books" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="searchBook" layoutX="64.0" layoutY="65.0" onAction="#searchBookOnAction" prefHeight="31.0" prefWidth="547.0" promptText="search book" styleClass="font" stylesheets="@../styleSheet/styleSheet.css" unFocusColor="#006523">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <Label layoutX="65.0" layoutY="121.0" text="Book Id" textFill="WHITE" />
+      <JFXTextField fx:id="txtBookId" layoutX="67.0" layoutY="150.0" prefHeight="25.0" prefWidth="298.0" unFocusColor="#005b18" />
+      <JFXButton buttonType="RAISED" layoutX="425.0" layoutY="473.0" onAction="#viewBookOnAction" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #019104;" text="View Books" textFill="WHITE" />
+   </children>
+</AnchorPane>
